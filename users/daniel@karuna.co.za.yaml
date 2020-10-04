@@ -1,0 +1,13 @@
+name: Daniel
+super: true
+id: 7055f183-24b3-41e5-bec4-9f49bdaeb609
+password_hash: $2y$10$BozL67DPvZtz6iqijOfclOADxWy75MbSKN31K2Fsn9WiqMrCu4aCu
+preferences:
+  collections:
+    transcripts:
+      columns:
+        - title
+        - slug
+        - date
+        - content
+      per_page: 10

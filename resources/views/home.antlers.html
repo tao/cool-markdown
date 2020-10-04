@@ -1,0 +1,60 @@
+<div class="max-w-5xl mx-auto relative py-4">
+    <article class="content">
+        <p class="font-medium text-lg text-teal">The Normal Articles</p>
+    </article>
+</div>
+
+<div class="max-w-2xl mx-auto mb-32">
+    {{ collection from="articles" limit="1" as="articles" }}
+        {{ articles }}
+            <div class="mb-16">
+                <h2 class="mb-4">
+                    <a href="{{ url }}" class="text-2xl hover:text-teal tracking-tight leading-tight font-bold">
+                        {{ title | widont }}
+                    </a>
+                </h2>
+            </div>
+        {{ /articles }}
+    {{ /collection }}
+</div>
+
+<div class="max-w-5xl mx-auto relative py-4">
+    <article class="content">
+        <p class="font-medium text-lg text-teal">The Ones with the Dynamic Parser (articles-two)</p>
+    </article>
+</div>
+
+<div class="max-w-2xl mx-auto mb-32">
+    {{ collection from="articles-two" limit="1" as="articles" }}
+        {{ articles }}
+            <div class="mb-16">
+                <h2 class="mb-4">
+                    <a href="{{ url }}" class="text-2xl hover:text-teal tracking-tight leading-tight font-bold">
+                        {{ title | widont }}
+                    </a>
+                </h2>
+            </div>
+        {{ /articles }}
+    {{ /collection }}
+</div>
+
+
+<div class="max-w-5xl mx-auto relative py-4">
+    <article class="content">
+        <p class="font-medium text-lg text-teal">The Ones with the Blueprint Parser (articles-three)</p>
+    </article>
+</div>
+
+<div class="max-w-2xl mx-auto mb-32">
+    {{ collection from="articles-three" limit="1" as="articles" }}
+        {{ articles }}
+            <div class="mb-16">
+                <h2 class="mb-4">
+                    <a href="{{ url }}" class="text-2xl hover:text-teal tracking-tight leading-tight font-bold">
+                        {{ title | widont }}
+                    </a>
+                </h2>
+            </div>
+        {{ /articles }}
+    {{ /collection }}
+</div>
